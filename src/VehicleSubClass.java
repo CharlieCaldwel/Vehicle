@@ -15,7 +15,7 @@ class Car extends VehicleClass {
     public String getcarInfo(){
         return vehicleInfo() + ", has: " + doors + " doors";
     }
-}
+}// end car
 
 class Motorcycle extends VehicleClass{
     boolean sidecar = false;
@@ -34,7 +34,7 @@ class Motorcycle extends VehicleClass{
     public String getcycleInfo(){
         return vehicleInfo() + ", has sidecar: " + sidecar;
     }
-}
+} // end motorcycle
 
 class Airplane extends VehicleClass{
     int engineAmount;
@@ -53,7 +53,7 @@ class Airplane extends VehicleClass{
     public String getplaneInfo(){
         return vehicleInfo() + ", has: " + engineAmount + " Engines";
     }
-}
+} // end airplane
 
 
 
