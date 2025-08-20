@@ -13,7 +13,7 @@ public class Main {
         System.out.println(Harley.getcycleInfo());
         System.out.println(Harley.cycleEngine.engineInfo());
 
-        Airplane F22 = new Airplane("LockHead", "F-22", 2011, 6, 52400, "jet");
+        Airplane F22 = new Airplane("LockHead", "F-22", 2011, 2, 52400, "jet");
 
         System.out.println("\nAirplane on: " + F22.vehicleOn);
         System.out.println(F22.getplaneInfo());
