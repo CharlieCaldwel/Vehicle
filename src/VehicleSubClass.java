@@ -18,7 +18,7 @@ class Car extends VehicleClass {
 }// end car
 
 class Motorcycle extends VehicleClass{
-    boolean sidecar = false;
+    boolean sidecar;
 
     Engine cycleEngine = new Engine();
 
