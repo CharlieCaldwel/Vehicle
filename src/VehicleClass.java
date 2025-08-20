@@ -2,7 +2,7 @@ public class VehicleClass {
 String brand;
 String model;
 int year;
-String vcinfo;
+
 
 boolean vehicleOn = false;
 
@@ -17,9 +17,10 @@ public void turnOffVehicle(){
 
 // Get Vehicle Info
 public String vehicleInfo(){
-    return vcinfo = "Model: " + model + ", " + "Brand: " + brand + ", " + "Year: " + year;
+    return "Model: " + model + ", " + "Brand: " + brand + ", " + "Year: " + year;
 }
-}
+
+} // end Vehicle
 
 class Engine{
     int Horsepower;
@@ -30,4 +31,4 @@ class Engine{
         return enInfo = "Horsepower: " + Horsepower + ", " + "Fuel type: " + Type;
     }
 
-}
+} // end engine
