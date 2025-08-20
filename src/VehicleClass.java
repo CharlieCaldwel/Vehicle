@@ -6,16 +6,16 @@ int year;
 
 boolean vehicleOn = false;
 
-// Turn on Vehicle
-public void turnOnVehicle(){
+
+public void startVehicle(){
     vehicleOn = true;
 }
 
-public void turnOffVehicle(){
+public void stopVehicle(){
     vehicleOn = false;
 }
 
-// Get Vehicle Info
+
 public String vehicleInfo(){
     return "Model: " + model + ", " + "Brand: " + brand + ", " + "Year: " + year;
 }
