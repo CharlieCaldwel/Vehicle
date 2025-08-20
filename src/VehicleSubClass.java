@@ -12,7 +12,7 @@ class Car extends VehicleClass {
         carEngine.Type = CarType;
     }
 
-    public String getcarInfo(){
+    public String carInfo(){
         return vehicleInfo() + ", has: " + doors + " doors";
     }
 }// end car
@@ -31,7 +31,7 @@ class Motorcycle extends VehicleClass{
         cycleEngine.Type = CycleType;
     }
 
-    public String getcycleInfo(){
+    public String cycleInfo(){
         return vehicleInfo() + ", has sidecar: " + sidecar;
     }
 } // end motorcycle
@@ -50,7 +50,7 @@ class Airplane extends VehicleClass{
         planeEngine.Type = PlaneType;
     }
 
-    public String getplaneInfo(){
+    public String planeInfo(){
         return vehicleInfo() + ", has: " + engineAmount + " Engines";
     }
 } // end airplane
