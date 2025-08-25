@@ -7,11 +7,11 @@ int year;
 boolean vehicleOn = false;
 
 
-public void startVehicle(){
+public void start(){
     vehicleOn = true;
 }
 
-public void stopVehicle(){
+public void stop(){
     vehicleOn = false;
 }
 

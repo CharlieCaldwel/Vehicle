@@ -11,9 +11,19 @@ class Car extends VehicleClass {
         carEngine.Horsepower = CarPower;
         carEngine.Type = CarType;
     }
-
-    public String carInfo(){
-        return vehicleInfo() + ", has: " + doors + " doors";
+    @Override
+    public void start(){
+        System.out.println("Car started");
+        vehicleOn = true;
+    }
+    @Override
+    public void stop(){
+        System.out.println("Car stopped");
+        vehicleOn = false;
+    }
+    @Override
+    public String vehicleInfo(){
+        return"Model: " + model + ", " + "Brand: " + brand + ", " + "Year: " + year + ", has: " + doors + " doors";
     }
 }// end car
 
@@ -31,8 +41,19 @@ class Motorcycle extends VehicleClass{
         cycleEngine.Type = CycleType;
     }
 
-    public String cycleInfo(){
-        return vehicleInfo() + ", has sidecar: " + sidecar;
+    @Override
+    public void start(){
+        System.out.println("MotorCycle started");
+        vehicleOn = true;
+    }
+    @Override
+    public void stop(){
+        System.out.println("MotorCycle stopped");
+        vehicleOn = false;
+    }
+    @Override
+    public String vehicleInfo(){
+        return "Model: " + model + ", " + "Brand: " + brand + ", " + "Year: " + year + ", has sidecar: " + sidecar;
     }
 } // end motorcycle
 
@@ -50,8 +71,19 @@ class Airplane extends VehicleClass{
         planeEngine.Type = PlaneType;
     }
 
-    public String planeInfo(){
-        return vehicleInfo() + ", has: " + engineAmount + " Engines";
+    @Override
+    public void start(){
+        System.out.println("Plane started");
+        vehicleOn = true;
+    }
+    @Override
+    public void stop(){
+        System.out.println("Plane stopped");
+        vehicleOn = false;
+    }
+    @Override
+    public String vehicleInfo(){
+        return "Model: " + model + ", " + "Brand: " + brand + ", " + "Year: " + year + ", has: " + engineAmount + " Engines";
     }
 } // end airplane
 
